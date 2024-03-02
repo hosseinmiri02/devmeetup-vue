@@ -1,14 +1,13 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+
+import meetup from "./meetup";
+import user from "./user";
+import shared from "./shared";
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
-  }
-})
+    meetup: meetup,
+    user: user,
+    shared: shared,
+  },
+});
